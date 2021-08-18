@@ -1,0 +1,33 @@
+html {
+  margin: 0%;
+  height: 100%;
+}
+
+body {
+  background-color: #000000;
+  background-image: linear-gradient(150deg, #000000 0%, #434343 100%);
+}
+
+div.card-deck {
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+}
+
+div.card {
+  cursor: pointer;
+  width: 14rem;
+  height: 30rem;
+  background-color: #5b6467;
+  background-image: linear-gradient(315deg, #c0c0c0 0%, #ffffff 74%);
+  color: black;
+  text-align: center;
+  margin: auto;
+  transition: 1s ease;
+  filter: grayscale(80%);
+}
+
+div.card:hover {
+  transform: scale(1.08);
+  filter: none;
+}
