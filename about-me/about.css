@@ -1,0 +1,126 @@
+body {
+  background-color: cornsilk;
+}
+
+.grid-item {
+  background-color: rgb(248, 244, 226);
+  border-radius: 8%;
+}
+
+.header {
+  grid-area: header;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.article {
+  grid-area: article;
+}
+
+img {
+  grid-area: img;
+  width: 100%;
+}
+
+.section1 {
+  grid-area: section1;
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+.img-description {
+  grid-area: img-des;
+}
+
+.gif {
+  grid-area: gif;
+  width: 100%;
+}
+
+@media (max-width: 414px) {
+  .grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 5fr 5fr;
+    margin: auto;
+    gap: 15px;
+    grid-template-areas:
+      "header"
+      "img"
+      "section1"
+      "gif"
+      "section2";
+  }
+}
+
+@media (min-width: 430px) and (max-width: 530px) {
+  .img {
+    height: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6fr 2fr 6fr;
+    margin: auto;
+    gap: 10px;
+    grid-template-areas:
+      "header header"
+      "img    section1"
+      "gif    gif"
+      "section2 section2";
+  }
+}
+
+@media (min-width: 530px) and (max-width: 710px) {
+  body {
+    margin: auto 5% auto 5%;
+  }
+
+  .img {
+    height: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6fr 2fr 6fr;
+    margin: auto;
+    gap: 10px;
+    grid-template-areas:
+      "header header"
+      "img    section1"
+      "img    gif"
+      "section2 section2";
+  }
+}
+
+@media (min-width: 710px) {
+  body {
+    margin: auto 20% auto 20%;
+  }
+  .section1,
+  .section2 {
+    /* line-height: 35px; */
+  }
+
+  .grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6fr 6fr 6fr;
+    margin: auto;
+    gap: 10px;
+    grid-template-areas:
+      "header header"
+      "img    section1"
+      "img    section2"
+      "img    gif";
+  }
+}
