@@ -13,6 +13,7 @@ Flaticon:
 <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 https://icons8.com/icon/set/home/ios
 
+
 Home icon for the navbar:
 -	https://www.iconsdb.com/black-icons/home-5-icon.html
 
