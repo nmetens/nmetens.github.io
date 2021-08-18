@@ -1,5 +1,5 @@
 
-// Load the navbar 
+// Load the navbar from the navbar file
 $(document).ready(() => {
     $(() => {
         $(".navigation").load("../navbar/navbar.html");
@@ -21,3 +21,4 @@ code_game.addEventListener("click", () => {
 java_parser.addEventListener("click", () => {
     window.location = "https://github.com/nmetens/The-Pendulum-Wave-Machine";
 });
+
