@@ -21,3 +21,9 @@ div.card:hover {
   transform: scale(1.08);
   filter: none;
 }
+
+footer {
+  margin-top: 290px;
+  text-align: center;
+  color: whitesmoke;
+}

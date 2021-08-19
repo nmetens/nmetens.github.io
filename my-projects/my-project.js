@@ -6,19 +6,19 @@ $(document).ready(() => {
     });
 });
 
-let pendulum_link = document.querySelector(".card1");
-let code_game = document.querySelector(".card2");
+let wave_machine = document.querySelector(".card1");
+let console_game = document.querySelector(".card2");
 let java_parser = document.querySelector(".card3");
 
-pendulum_link.addEventListener("click", () => {
+wave_machine.addEventListener("click", () => {
     window.location = "https://github.com/nmetens/The-Pendulum-Wave-Machine";
 });
 
-code_game.addEventListener("click", () => {
-    window.location = "https://github.com/nmetens/The-Pendulum-Wave-Machine";
+console_game.addEventListener("click", () => {
+    window.location = "https://github.com/nmetens/ConsoleGame";
 });
 
 java_parser.addEventListener("click", () => {
-    window.location = "https://github.com/nmetens/The-Pendulum-Wave-Machine";
+    window.location = "https://github.com/nmetens/JavaParser";
 });
 
