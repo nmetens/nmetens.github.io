@@ -1,10 +1,28 @@
-html,
+/* html,
 body {
   margin: 0%;
   height: 100%;
+} */
+
+/* Mountain Background: */
+html {
+  background-image: url("../images/mountain_background.jpg");
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
+  background-color: transparent;
+  height: 100%;
+}
+
+/* Gradient Background (black to grey): */
+/* body {
   background-color: #000000;
   background-image: linear-gradient(150deg, #000000 0%, #434343 100%);
-}
+  background-attachment: fixed;
+} */

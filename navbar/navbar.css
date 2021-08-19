@@ -1,5 +1,13 @@
 .navigation {
   background-color: #202020;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; /* pushed the navbar in front of all other elements */
+}
+
+.navigation ~ * {
+  margin-top: 50px;
 }
 
 .navie {
