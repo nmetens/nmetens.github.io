@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathan Metens</title>
+    <title>Nathan Metens - Home</title>
 
     <!-- Format and Design files: -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script defer src="main-page.js"></script>
 
+    <!-- Loading the navbar html file using JavaScript: -->
     <script>
         $(document).ready(() => {
             $(() => {
@@ -22,23 +23,18 @@
             });
         });
     </script>
+
 </head>
 <body>
 
     <!-- The navigation is linked from the "navbar" folder -->
     <nav class="navigation"></nav>
 
-    <!-- Background image testing -->
-    <!-- <img id="page-background" src="../images/mountain.jpg" alt="Black and white snow mountain range"> -->
+    <!-- This title is created in JQuery in the "main-page.js" file -->
+    <section id="title"></section>    
 
-    <h1 id="nathan">Nathan</h1> 
-    <h1 id="metens">Metens</h1>
-
-    <!-- <h5>This is the very first website that I have created. Welcome to the dark side...</h5> -->
-
-    <footer>
-        <span>&copy; 2021 nmetens, Inc.</span>
-    </footer>
+    <!-- This is the copy right at the bottom of the page to look more professional -->
+    <footer id="copyright"></footer>
 
 </body>
 </html>
