@@ -1,6 +1,13 @@
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
 div.card-deck {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
   margin: auto;
-  padding: 20px;
+  padding: 30px;
   width: 90%;
 }
 
@@ -17,13 +24,11 @@ div.card {
   filter: grayscale(80%);
 }
 
-div.card:hover {
-  transform: scale(1.08);
-  filter: none;
+.card-text {
+  overflow: hidden;
 }
 
-footer {
-  margin-top: 290px;
-  text-align: center;
-  color: whitesmoke;
+div.card:hover {
+  transform: scale(1.05);
+  filter: none;
 }
