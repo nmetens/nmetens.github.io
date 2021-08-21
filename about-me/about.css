@@ -1,25 +1,23 @@
-body {
-  font-family: Verdana, sans-serif;
-}
-
 h1 {
   text-align: center;
+  font-weight: bold;
 }
 
 .about-me {
   margin: 2% 10% 5% 10%;
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: whitesmoke;
+  padding: 30px;
+  border-radius: 10px;
 }
 
-/*  */
-/*  */
-/*  */
 /* Slideshow container */
 .slideshow {
-  max-width: 65%;
+  max-width: 95%;
   position: relative;
   margin: auto;
+  opacity: none;
 }
 
 /* Next & previous buttons */
@@ -51,13 +49,14 @@ h1 {
 /* Caption text */
 .text {
   color: white;
-  background-color: black;
-  opacity: 0.6;
+  background-color: rgb(0, 0, 0, 0.6);
+  /* opacity: 0.6; */
   font-size: 1.2em;
-  padding-top: 5px;
+  /* padding-top: 5px; */
+  padding: 10px;
   position: absolute;
   bottom: 0%;
-  height: 15%;
+  /* height: 15%; */
   width: 100%;
   text-align: center;
 }
@@ -65,6 +64,7 @@ h1 {
 .image {
   width: 100%;
   height: 100%;
+  opacity: none;
 }
 
 /* .grid-item {

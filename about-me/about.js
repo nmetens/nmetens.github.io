@@ -1,4 +1,19 @@
 
+$(document).ready(() => {
+    $(() => {
+        $(".navigation").load("../navbar/navbar.html");
+    });
+    $("#copyright").append(
+        $("<div>").text("\u00A9 2021 nmetens, Inc.")
+        .css({
+            textAlign: "center",
+            color: "whitesmoke",
+            position: "relative",
+            marginBottom: "30px"
+        })
+    );
+});
+
 function showSlides(n) {
     var slides = document.getElementsByClassName("slides");
     if (n > slides.length) {
