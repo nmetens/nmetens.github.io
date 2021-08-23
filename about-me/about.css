@@ -1,10 +1,13 @@
-h1 {
+#about {
   text-align: center;
   font-weight: bold;
+  margin-top: 80px;
 }
 
 .about-me {
-  margin: 2% 10% 5% 10%;
+  width: 70%;
+  margin: auto;
+  height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(0, 0, 0, 0.8);
   color: whitesmoke;
@@ -12,15 +15,63 @@ h1 {
   border-radius: 10px;
 }
 
-/* Slideshow container */
 .slideshow {
-  max-width: 95%;
   position: relative;
   margin: auto;
-  opacity: none;
+  width: 100%;
+  height: 500px;
 }
 
-/* Next & previous buttons */
+@media (max-width: 767px) {
+  .slideshow {
+    /* position: relative; */
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image {
+    width: 100%;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  #prev,
+  #next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 0.5rem;
+  }
+
+  .text {
+    text-align: center;
+    color: whitesmoke;
+    /* background-color: rgb(0, 0, 0, 0.6); */
+    background-color: rebeccapurple;
+    width: 100%;
+    font-size: 0.5em;
+    padding: 10px;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 #prev,
 #next {
   cursor: pointer;
@@ -28,43 +79,29 @@ h1 {
   top: 40%;
   width: auto;
   padding: 18px;
-  color: white;
+  color: whitesmoke;
   font-weight: bold;
   font-size: 2rem;
-  transition: 0.4s ease;
 }
 
-/* Position the "next button" to the right */
 #next {
   right: 0;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 #prev:hover,
 #next:hover {
-  background-color: black;
-  opacity: 0.6;
+  background-color: rgb(0, 0, 0, 0.8);
 }
 
-/* Caption text */
 .text {
-  color: white;
+  text-align: center;
+  color: whitesmoke;
   background-color: rgb(0, 0, 0, 0.6);
-  /* opacity: 0.6; */
-  font-size: 1.2em;
-  /* padding-top: 5px; */
+  width: 100%;
+  font-size: 1.4em;
   padding: 10px;
   position: absolute;
   bottom: 0%;
-  /* height: 15%; */
-  width: 100%;
-  text-align: center;
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-  opacity: none;
 }
 
 /* .grid-item {

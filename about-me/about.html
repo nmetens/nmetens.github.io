@@ -6,43 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
 
-    <!-- Format and Design files: -->
+    <!-- Bootstrap links for navbar functionality: -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="../navbar/navbar.css">
+    <!-- Format and Design files from directories: -->
     <link rel="stylesheet" type="text/css" href="../links&scripts/background.css">
-
+    <link rel="stylesheet" type="text/css" href="../navbar/navbar.css">
     <link rel="stylesheet" href="about.css">
     <script defer src="about.js"></script>
 </head>
     <body>
 
         <!-- The navigation is linked from the "navbar" folder -->
-        <nav class="navigation"></nav>
+        <nav class ="navbar navbar-expand-md"></nav>
 
-        <h1>About Me</h1>
+        <h1 id="about">About Me</h1>
 
-        <section class="about-me">
-            <p>Hello! My name is Nathan. I began college at the age of 16 thanks to a generous program called Early College High School (ECHS). This program allowed me to be a full-time student at Portland Community College (PCC). I graduated from ECHS at the top of my class with an associate of science degree and transferred to Portland State University (PSU). There, I graduated with a Bachelor's in mathematics, with minors in physics and computer science. I became interested in computer programming after a coding class where I learned the basics of the Python language. I have been learning to program for the last two years and find it captivating each time I acquire new knowledge. Thus, I am currently taking courses towards a master's in computer science at PSU, from which I plan to graduate sometime in 2022. <br> <br>
-            Aside from sitting at my desk all day, I enjoy cycling, running, playing basketball, traveling, backpacking, and cliff jumping. I love staying active through outdoor adventures and working out. A fun fact about me is that I am a first-generation Belgian-American (the french-speaking kind).</p>
-            <br>
-      
-        <section class="slideshow">
-          <div class="slides">
-            <img class="image" src="../images/mountain_background.jpg">
-            <div class="text">Example</div>
-          </div>
-      
-          <div class="slides">
-            <img class="image" src="../images/basketball.gif">
-            <div class="text">Me at the gym playing for hours.</div>
-          </div>
-          
-          <a id="prev">&#8592;</a>
-          <a id="next">&#8594;</a>
-        </section>
-      </section>
+        <main class="about-me mt-5">
+          <p>
+            Hello! My name is Nathan. I began college at the age of 16 thanks to a generous program called Early College High School (ECHS). This program allowed me to be a full-time student at Portland Community College (PCC). For two years, I studied the basics of math, physics, and chemistry. I graduated from ECHS at the top of my class with an associate of science degree and transferred to Portland State University (PSU). There, I pursued a bachelor's in mathematics, a minor in physics, and a minor in computer science. I graduated with my bachelor's degree at age 20 in the Spring of 2021. <br><br>
+            I grew interested in computer programming after a coding class where I learned the basics of the Python language last spring 2020. I find it captivating each time I acquire new computer knowledge. Thus, I am currently taking courses towards a master's in computer science at PSU, from which I plan to graduate sometime in 2022. I also plan to be a math tutor and computer science tutor while completing my master's. <br><br>
+            I am currently the co-manager of a small family business called Oofty Waffles and Crepes and was a lifeguard for a year at the local aquatic center (check out my previous work page). <br><br>
+            Aside from sitting at my desk all day, I enjoy cycling, running, playing basketball, traveling the world, backpacking, cliff jumping, drawing, skydiving, and more. I love staying active through outdoor adventures and working out. A fun fact about me is that I am a first-generation Belgian-American (the french-speaking kind). 
+          </p>
+          <br>
+
+          <section class="slideshow">
+            <div class="slides">
+              <img class="image" src="../images/Nathan-in-Germany.jpg">
+              <div class="text">Exploring the streets of a small Western-German town near the border of Eastern-Belgium.</div>
+            </div>
+            
+            <div class="slides">
+              <img class="image" src="../images/art-work.JPG">
+              <div class="text">A self portrait, only in pencil, of a friend and I snowboarding.</div>
+            </div>
+            
+            <div class="slides">
+              <img class="image" src="../images/basketball.gif">
+              <div class="text">At the gym playing for hours and hours.</div>
+            </div>
+            
+            <div class="slides">
+              <img class="image" src="../images/backpacking-washington.jpg">
+              <div class="text">Backpacking in the lush Washington State forests.</div>
+            </div>
+
+            <div class="slides">
+              <img class="image" src="../images/Nathan-in-Sicily.jpg">
+              <div class="text">Causing traffic in a large town in Sicily.</div>
+            </div>
+            
+            <div class="slides">
+              <img class="image" src="../images/Nathan-in-Mexico.jpg">
+              <div class="text">Walking to the fields in a small village in the deep south of Mexico to pick oranges in the high trees.</div>
+            </div>
+
+            <div class="slides">
+              <img class="image" src="../images/sky-diving.jpg">
+              <div class="text">My first tandem skydive.</div>
+            </div>
+
+            <div class="slides">
+              <img class="image" src="../images/bike1.JPG">
+              <div class="text">My very first triathlon race.</div>
+            </div>
+
+            <a id="prev">&#8592;</a>
+            <a id="next">&#8594;</a>
+          </section>
+        </main>
 
       <footer id="copyright"></footer>
       
