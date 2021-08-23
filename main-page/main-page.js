@@ -1,5 +1,8 @@
 
 $(document).ready(() => {
+    $(() => {
+        $(".navbar").load("../navbar/navbar.html");
+    });
     $("#title").append(
         $("<h1>").text("Nathan")
         .css({
@@ -10,7 +13,7 @@ $(document).ready(() => {
         }),
         $("<h1>").text("Metens")
         .css({
-            marginLeft: "40%",
+            marginLeft: "25%",
             color: "black",
             fontFamily: "Arial",
             fontSize: "12rem"
@@ -22,7 +25,7 @@ $(document).ready(() => {
             textAlign: "center",
             color: "whitesmoke",
             position: "relative",
-            marginTop: "40vh"
+            marginBottom: "30px"
         })
     );
 });
