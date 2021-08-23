@@ -1,4 +1,4 @@
-.navigation {
+.navbar {
   background-color: #202020;
   position: fixed;
   top: 0;
@@ -6,33 +6,39 @@
   z-index: 1; /* pushed the navbar in front of all other elements */
 }
 
-.navigation ~ * {
-  margin-top: 50px;
+.navbar ~ * {
+  margin-top: 60px;
 }
 
-.navie {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+.navbar-toggler {
+  background-color: whitesmoke;
 }
 
 #home-icon {
   width: 35px;
+  margin: auto;
 }
 
 #home-icon:hover {
   transform: scale(1.1);
+  color: #a9a9a9;
 }
+
 #home-icon:active {
   transform: scale(0.98);
 }
 
-.navie .nav-item {
+.navbar .nav-item {
+  padding-left: 25px;
   font-size: larger;
   color: #f8f8f8;
 }
 
-.navie .nav-item:hover {
-  background: #f5f5f5;
-  color: #000000;
+.navbar .nav-item:hover {
+  color: #a9a9a9;
+  transform: scale(1.01);
+}
+
+.navbar .nav-item:active {
+  transform: scale(0.99);
 }
