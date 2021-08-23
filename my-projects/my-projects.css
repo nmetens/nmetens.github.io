@@ -1,17 +1,18 @@
-h1 {
+#projects {
   text-align: center;
   font-weight: bold;
+  margin-top: 80px;
 }
 
-div.card-deck {
+.card-deck {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   margin: auto;
   padding: 30px;
-  width: 90%;
+  width: 70%;
 }
 
-div.card {
+.card {
   cursor: pointer;
   width: 14rem;
   height: 30rem;
@@ -22,13 +23,10 @@ div.card {
   margin: auto;
   transition: 1s ease;
   filter: grayscale(80%);
+  overflow: auto;
 }
 
-.card-text {
-  overflow: hidden;
-}
-
-div.card:hover {
+.card:hover {
   transform: scale(1.05);
   filter: none;
 }
