@@ -6,31 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
 
-    <!-- Outsource Files: -->
+    <!-- Bootstrap links for navbar functionality: -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    
-    <link rel="stylesheet" type="text/css" href="../navbar/navbar.css">
         
     <!-- Files for this page: -->
-    <script>
-        // Load the navbar 
-        $(document).ready(() => {
-        $(() => {
-            $(".navigation").load("../navbar/navbar.html");
-            });
-        });
-    </script>
+    <link rel="stylesheet" type="text/css" href="../navbar/navbar.css">
     <link rel="stylesheet" type="text/css" href="../links&scripts/background.css">
-    <!-- <link rel="stylesheet" type="text/css" href="previous-work.css"> -->
-
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script defer src="contact.js"></script>
 </head>
 <body>
 
     <!-- The navigation is linked from the "navbar" folder in my-projects.js -->
-    <nav class="navigation"></nav>
+    <nav class ="navbar navbar-expand-md"></nav>
 
-    <h1>Contact Me Here:</h1>
-    <p>This is a contact form...</p>
+    <h1 id="contact">Contact Me Here:</h1>
+
+    <main class="container mt-5">
+        <form class="mx-auto p-4">
+            <div class="form-group">
+                <label for="first-name">Your Name</label>
+                <input type="name" class="form-control" id="first-name" placeholder="First Name"/>
+            </div>
+          <div class="form-group">
+            <label for="email">Your Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="email@example.com"/>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Start typing here..."></textarea>
+          </div>
+          <div class="form-group my-4 buttons">
+            <input id="submit-btn" type="submit" class="btn btn-primary w-50" value="Send Message" />
+            <input id="reset-btn" type="reset" class="btn btn-secondary w-50" value="Reset Form" />
+          </div>
+        </form>
+    </main>
+
+    <footer id="copyright"></footer>
+
 </body>
 </html>

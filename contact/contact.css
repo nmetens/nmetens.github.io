@@ -1,0 +1,20 @@
+#contact {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.container {
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 10px;
+  color: whitesmoke;
+  width: 70%;
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
