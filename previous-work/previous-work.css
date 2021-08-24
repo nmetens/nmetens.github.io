@@ -2,6 +2,10 @@
   background-color: rgb(0, 0, 0, 0.8);
 }
 
+.small-size-text {
+  display: none;
+}
+
 #prev-work {
   margin-top: 80px;
 }
@@ -11,6 +15,27 @@
 }
 
 #resume {
+  width: 100%;
+}
+
+.flex-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  overflow: visible;
+}
+
+.oofty-image {
+  opacity: none;
+  width: 100%;
+  margin: auto;
+  object-fit: cover;
+  margin: 8px 0 8px 0;
+}
+
+.pool-image {
   width: 100%;
 }
 
@@ -32,7 +57,7 @@ h5.modal-title {
 
   color: whitesmoke;
   background-color: #007a00;
-  border-color: black;
+  border-color: whitesmoke;
 }
 .github {
   grid-column-start: 1;
@@ -40,7 +65,7 @@ h5.modal-title {
 
   color: whitesmoke;
   background-color: #171515;
-  border-color: black;
+  border-color: whitesmoke;
 }
 .linkedin {
   grid-column-start: 2;
@@ -48,7 +73,7 @@ h5.modal-title {
 
   color: whitesmoke;
   background-color: #0e76a8;
-  border-color: black;
+  border-color: whitesmoke;
 }
 .yelp {
   grid-column-start: 3;
@@ -56,7 +81,7 @@ h5.modal-title {
 
   color: whitesmoke;
   background-color: #c41200;
-  border-color: black;
+  border-color: whitesmoke;
 }
 
 .resume:hover,
@@ -66,4 +91,47 @@ h5.modal-title {
   background-color: white;
   color: black;
   border-color: black;
+}
+
+/* Change the image and button display for smaller devices */
+@media (max-width: 600px) {
+  .full-size-text {
+    display: none;
+  }
+
+  .small-size-text {
+    display: inline;
+  }
+
+  .flex-container {
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    overflow: visible;
+  }
+
+  .oofty-image {
+    opacity: none;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+  }
+
+  .pool-image {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+  }
+
+  .button-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }

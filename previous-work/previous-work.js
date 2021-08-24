@@ -13,7 +13,9 @@ $(document).ready(() => {
     })
     $("h1").css({
       textAlign: "center",
-      fontWeight: "bold"
+      fontWeight: "bold",
+      color: "whitesmoke",
+      textShadow: "3px 3px 3px #000, 0 0 5px #000"
     });
     $("h3").css({
       color: "whitesmoke",
@@ -22,22 +24,10 @@ $(document).ready(() => {
     $(".work").css({
       color: "whitesmoke",
       opacity: "none",
-      padding: "30px"
+      padding: "15px"
     });
-    $(".flex-container").css({
-      display: "flex",
-      justifyContent: "center",
-      gap: "20px",
-      overflow: "visible"
-    });
-    $(".oofty-image").css({
-      opacity: "none",
-      height: "150px",
-      margin: "8px 0 8px 0"
-    });
-    $(".pool-image").css("height", "350px");
     $("#copyright").append(
-      $("<div>").text("\u00A9 2021 nmetens, Inc.")
+      $("<div>").text("\u00A9 2021 nmetens")
       .css({
           textAlign: "center",
           color: "whitesmoke",
