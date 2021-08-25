@@ -1,9 +1,11 @@
 
-// Load the navbar from the navbar file
 $(document).ready(() => {
+    // Load the navbar from the navbar file:
     $(() => {
         $(".navbar").load("../navbar/navbar.html");
     });
+
+    // Creating the copyright footer:
     $("#copyright").append(
         $("<div>").text("\u00A9 2021 nmetens")
         .css({
@@ -15,10 +17,12 @@ $(document).ready(() => {
     );
 });
 
+// Creating variables for each card in the card deck:
 let wave_machine = document.querySelector(".card1");
 let console_game = document.querySelector(".card2");
 let java_parser = document.querySelector(".card3");
 
+// Adding events that will open a new window link on card click:
 wave_machine.addEventListener("click", () => {
     window.location = "https://github.com/nmetens/The-Pendulum-Wave-Machine";
 });
@@ -30,5 +34,3 @@ console_game.addEventListener("click", () => {
 java_parser.addEventListener("click", () => {
     window.location = "https://github.com/nmetens/JavaParser";
 });
-
-

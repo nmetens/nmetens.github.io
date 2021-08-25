@@ -1,23 +1,27 @@
+/* Creating the page title: */
 #projects {
   text-align: center;
   font-weight: bold;
   margin-top: 80px;
   color: whitesmoke;
-  text-shadow: 3px 3px 3px #000, 0 0 5px #000;
+  text-shadow: 3px 3px 3px #000, 0 0 5px #000; /* Adding shadow to the title so it pops */
 }
 
+/* Hiding the small-size-text while in large view: */
 .small-size-text {
   display: none;
 }
 
+/*  Creating the black opacity background of the page:*/
 .card-deck {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
-  margin: auto;
+  margin: auto; /* Centering */
   padding: 30px;
-  width: 70%;
+  width: 80%;
 }
 
+/* Adding card details: */
 .card {
   cursor: pointer;
   width: 14rem;
@@ -27,22 +31,26 @@
   color: black;
   text-align: center;
   margin: auto;
-  transition: 1s ease;
+  transition: 1s ease; /* When hovered over */
   filter: grayscale(80%);
   overflow: auto;
 }
 
+/* Effect when mouse hover: */
 .card:hover {
-  transform: scale(1.05);
-  filter: none;
+  transform: scale(1.05); /* Increases card size to act as button */
+  filter: none; /* Adding color for more pop */
 }
 
-@media (min-width: 575px) and (max-width: 1125px) {
+/* When viewed with medium screens: */
+@media (min-width: 420px) and (max-width: 780px) {
+  /* Show the hidden text to inform tablet users to tap when there is no hover effect for medium screen sizes: */
   .small-size-text {
     display: inline;
     color: whitesmoke;
   }
 
+  /* Style card deck for better viewing: */
   .card-deck {
     display: flex;
     flex-flow: row wrap;
@@ -50,6 +58,7 @@
     width: 80%;
   }
 
+  /* Smaller card titles for better card viewing: */
   .card-title {
     font-size: 1.2rem;
   }
@@ -59,11 +68,20 @@
   }
 }
 
+/* For smaller screens such as phones: */
 @media (max-width: 420px) {
+  /* Show the hidden text to inform phone users to tap when there is no hover effect for touch screens: */
+  .small-size-text {
+    display: inline;
+    color: whitesmoke;
+  }
+
+  /* Hide the project info to save space on mobile devices: */
   .full-size-text {
     display: none;
   }
 
+  /* Wrap the cards so that they are stacked: */
   .card-deck {
     gap: 2px;
     margin: auto;
@@ -71,10 +89,12 @@
     flex-flow: row wrap;
   }
 
+  /* Smaller project titles: */
   .card-title {
     font-size: 1.5rem;
   }
 
+  /* Smaller card sizes: */
   .card {
     filter: none;
     width: 13rem;
