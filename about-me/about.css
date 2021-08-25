@@ -1,7 +1,9 @@
+/* Hide the small view text while on large screen width: */
 #small-view-text {
   display: none;
 }
 
+/* Page title styling: */
 #about {
   text-align: center;
   font-weight: bold;
@@ -10,8 +12,9 @@
   margin-top: 80px;
 }
 
+/* Page content background position and size to hold slideshow and text: */
 .about-me {
-  width: 70%;
+  width: 80%;
   margin: auto;
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
@@ -21,45 +24,60 @@
   border-radius: 10px;
 }
 
+/*  */
 .slideshow {
-  position: relative;
+  position: relative; /* Keeps the slideshow in place */
   margin: auto;
   width: 100%;
-  height: 500px;
+  height: 500px; /* For best view, large screen size views 500px high photos */
 }
 
+/* Container for photos is 100% the width and hieght of the slideshow element */
 .slides {
   width: 100%;
   height: 100%;
 }
 
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0px;
+}
+
+/* Width and heigh of photos matched slides container and the photo is covered for best view without changing the photos original shape: */
 .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Styling of left and right arrow buttons for next and previous image: */
 #prev,
 #next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 40%; /* Centering the buttons */
   width: auto;
   padding: 18px;
   color: whitesmoke;
-  font-weight: bold;
+  font-weight: bold; /* More visible */
   font-size: 2rem;
 }
 
+/* Places the right arrow at the end of the slideshow container: */
 #next {
   right: 0;
 }
 
+/* Addes background with opacity for better viewing of next/prev buttons on hover: */
 #prev:hover,
 #next:hover {
   background-color: rgb(0, 0, 0, 0.8);
 }
 
+/* Slide description styling is at the bottom and overlays each photo but has opacity: */
 .text {
   text-align: center;
   color: whitesmoke;
@@ -71,85 +89,83 @@
   bottom: 0%;
 }
 
+/* For medium screen widths: */
 @media (max-width: 990px) {
+  /* Continue hiding small view text: */
   #small-view-text {
     display: none;
   }
 
+  /* Decrease height of slides by 100px: */
   .slideshow {
     height: 400px;
   }
 
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
+  /* Decrease buttons and padding for easier image view: */
   #prev,
   #next {
     padding: 8px;
     font-size: 2rem;
   }
 
+  /* Decrease text and padding: */
   .text {
     font-size: 1.2em;
     padding: 8px;
   }
 }
 
+/* For medium screen widths: */
 @media (max-width: 745px) {
+  /* Continue to hide small text: */
   #small-view-text {
     display: none;
   }
 
+  /* Decrease slideshow size by 100px again: */
   .slideshow {
     height: 300px;
   }
 
-  .image {
-    width: inherit;
-    height: inherit;
-    object-fit: cover;
-  }
-
+  /* Decrease next and prev buttons again: */
   #prev,
   #next {
     padding: 6px;
     font-size: 1.5rem;
   }
 
+  /* Decrease slideshow text for increased photo visibility: */
   .text {
     font-size: 1em;
     padding: 6px;
   }
 }
 
+/* For smaller screen widths: */
 @media (max-width: 615px) {
+  /* Show the small view text: */
   #small-view-text {
     display: inline;
   }
 
+  /* Hide the large view text: */
   #full-view-text {
     display: none;
   }
 
+  /* Decrease slideshow size: */
   .slideshow {
     height: 200px;
   }
 
-  .image {
-    width: inherit;
-    height: inherit;
-    object-fit: cover;
-  }
-
+  /* Increase padding for easier button press: */
   #prev,
   #next {
     padding: 15px;
     font-size: 1.2rem;
   }
 
+  /* Decrease text size: */
   .text {
     font-size: 0.8em;
     padding: 4px;
