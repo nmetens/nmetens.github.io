@@ -29,7 +29,7 @@
   position: relative; /* Keeps the slideshow in place */
   margin: auto;
   width: 100%;
-  height: 500px; /* For best view, large screen size views 500px high photos */
+  height: 600px; /* For best view, large screen size views 500px high photos */
 }
 
 /* Container for photos is 100% the width and hieght of the slideshow element */
